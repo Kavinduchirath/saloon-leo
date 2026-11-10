@@ -15,14 +15,3 @@ export function GET(){
 //     })
 // }
 
-export async function POST(req: NextRequest){
-    const body = await req.json()
-    await prisma.student.create({
-        data:{
-            name: body.name,
-            age : body.age,
-            city : body.city
-        }
-    })
-    return NextResponse.json({msg :"created"})
-}

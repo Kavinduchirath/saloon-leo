@@ -12,9 +12,4 @@ datasource db {
   provider = "postgresql"
 }
 
-model Student{
-  id Int @id @default(autoincrement())
-  name String
-  age Int
-  city String
-}
+
